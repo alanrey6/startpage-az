@@ -134,4 +134,5 @@ ul {
 li:first-child {
     font-weight: bold;
     line-height: 2rem;
+    text-transform: uppercase;
 }
