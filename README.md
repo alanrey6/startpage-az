@@ -1,6 +1,6 @@
 # My first start page
 
-This is a simple start page I created inspired by a lesson/guide on [stpg.tk](https://stpg.tk/guides/basic-startpage)
+This is a simple start page I created using a lesson/guide from [stpg.tk](https://stpg.tk/guides/basic-startpage) and adding some modifications
 
 ![Demo:](./startpage-az-demo.gif)
 
