@@ -1,8 +1,11 @@
 # My first start page
 
-This is a simple start page I created inspired by the lesson on stpg.tk
+This is a simple start page I created inspired by a lesson/guide on [stpg.tk](https://stpg.tk/guides/basic-startpage)
+
+![Demo:](./startpage-az-demo.gif)
 
 ## Features:
+
 - Functional clock
 - Light and Dark mode
-- Hover effects on links using mousein and mouseout events
+- Hover effects on links change based on light vs dark mode, using mousein and mouseout events
