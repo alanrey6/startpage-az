@@ -37,7 +37,7 @@ body {
     margin: .5rem;
     padding: .5rem;
     background: var(--bg-color);
-    transition: background-color 0.15s;
+    transition: all 0.2s;
     color: var(--text);
 }
 
@@ -48,6 +48,7 @@ nav {
     min-width: 24rem;
     padding: 1rem 1rem;
     background: var(--secondary-color);
+    transition: background-color 0.2s;
     border: none;
     border-radius: 10px;
     margin-top: .5rem;
@@ -59,6 +60,7 @@ section {
     align-items: center;
     padding: 1rem 1rem;
     background: var(--secondary-color);
+    transition: background-color 0.2s;
     border: none;
     border-radius: 10px;
 }
@@ -91,6 +93,10 @@ a {
 }
 a:hover {
     color: var(--primary-color);
+}
+
+p:hover {
+    cursor: pointer;
 }
 
 /* DuckDuckGo Search Bar */
