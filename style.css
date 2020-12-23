@@ -1,139 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Color Themes */
 
 .theme-light {
-    --primary-color: rgb(20, 33, 61);
-    --secondary-color: rgb(184, 184, 184);
-    --bg-color: rgb(224, 224, 224);
-    --text: rgb(0, 0, 0);
+  --primary-color: rgb(20, 33, 61);
+  --secondary-color: rgb(184, 184, 184);
+  --bg-color: rgb(224, 224, 224);
+  --text: rgb(0, 0, 0);
 }
 
 .theme-dark {
-    --primary-color: rgb(252, 163, 17);
-    --secondary-color: rgb(51, 51 ,51);
-    --bg-color: rgb(10, 10, 10);
-    --text: rgb(255, 255, 255);
+  --primary-color: rgb(252, 163, 17);
+  --secondary-color: rgb(51, 51, 51);
+  --bg-color: rgb(10, 10, 10);
+  --text: rgb(255, 255, 255);
 }
 
 /* Elements */
 
 html {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: 20px "Courier New", Courier, monospace;
-    height: 100%;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 20px "Courier New", Courier, monospace;
+  height: 100%;
+  margin: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: .5rem;
-    padding: .5rem;
-    background: var(--bg-color);
-    transition: all 0.2s;
-    color: var(--text);
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: var(--bg-color);
+  transition: all 0.2s;
+  color: var(--text);
 }
 
 nav {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    min-width: 24rem;
-    padding: 1rem 1rem;
-    background: var(--secondary-color);
-    transition: background-color 0.2s;
-    border: none;
-    border-radius: 10px;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-width: 24rem;
+  padding: 1rem 1rem;
+  background: var(--secondary-color);
+  transition: background-color 0.2s;
+  border: none;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 section {
-    display: flex;
-    align-items: center;
-    padding: 1rem 1rem;
-    background: var(--secondary-color);
-    transition: background-color 0.2s;
-    border: none;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  background: var(--secondary-color);
+  transition: background-color 0.2s;
+  border: none;
+  border-radius: 10px;
 }
 
 /* Text Elements */
 
 h1 {
-    font-size: 2rem;
-    grid-column: 1 / -1;
-    margin: 0;
-    text-align: center;
+  font-size: 2rem;
+  grid-column: 1 / -1;
+  margin: 0;
+  text-align: center;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 li:first-child {
-    font-weight: bold;
-    line-height: 2rem;
-    text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2rem;
+  text-transform: uppercase;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 p:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* DuckDuckGo Search Bar */
 
 form {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 form label {
-    color: var(--primary-color);
-    padding: 0 .1rem;
+  color: var(--primary-color);
+  padding: 0 0.1rem;
 }
 
 form input {
-    background: inherit;
-    border: none;
-    font: inherit;
-    width: 100%;
+  background: inherit;
+  border: none;
+  font: inherit;
+  width: 100%;
 }
 
 form input:focus {
-    outline: none;
-    color: var(--text);
-}  
+  outline: none;
+  color: var(--text);
+}
 
 /* Clock */
 #box-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 #time {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
