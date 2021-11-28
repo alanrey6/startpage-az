@@ -1,2 +1,4 @@
 # vscode files
 .vscode/
+.prettierrc
+weather-icons-svg.html

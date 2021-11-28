@@ -26,7 +26,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font: 20px "Courier New", Courier, monospace;
+  font: 20px 'Courier New', Courier, monospace;
   height: 100%;
   margin: 0;
 }
@@ -41,7 +41,18 @@ body {
   color: var(--text);
 }
 
-nav {
+section.box-1,
+section.box-4 {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  background: var(--secondary-color);
+  transition: background-color 0.2s;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+section.box-2 {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -51,18 +62,20 @@ nav {
   transition: background-color 0.2s;
   border: none;
   border-radius: 10px;
-  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-section {
-  display: flex;
-  align-items: center;
+section.box-3 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  min-width: 24rem;
   padding: 1rem 1rem;
   background: var(--secondary-color);
   transition: background-color 0.2s;
   border: none;
   border-radius: 10px;
+  margin-bottom: 0.5rem;
 }
 
 /* Text Elements */
@@ -125,7 +138,7 @@ form input:focus {
 }
 
 /* Clock */
-#box-1 {
+#clock {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,4 +148,23 @@ form input:focus {
 #time {
   font-size: 2rem;
   font-weight: bold;
+}
+
+/* Weather */
+#weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#weather-data {
+  /* font-size: 2rem; */
+  font-weight: bold;
+}
+
+svg {
+  height: 23px;
+  width: 23px;
+  text-decoration: none;
 }

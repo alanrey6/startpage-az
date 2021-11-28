@@ -4,32 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/546d6a303e.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <script defer src="script.js"></script>
     <title>Start Page</title>
   </head>
 
   <body class="theme-light">
-    <section>
-      <div id="box-1">
+    <section class="box-1">
+      <div id="clock">
         <div id="time"></div>
       </div>
     </section>
 
-    <nav>
+    <section class="box-2">
       <h1>Welcome!</h1>
 
       <ul>
         <li>General</li>
         <li>
-          <a href="https://nordvpn.com/" target="_blank">NordVPN</a>
-        </li>
-        <li>
           <a href="https://beta.protonmail.com/login" target="_blank"
             >Proton Mail</a
           >
+        </li>
+        <li>
+          <a href="https://www.udemy.com/" target="_blank">Udemy</a>
         </li>
         <li>
           <a href="https://youtube.com" target="_blank">YouTube</a>
@@ -37,14 +38,18 @@
       </ul>
 
       <ul>
-        <li>Gambling</li>
+        <li>Crypto</li>
         <li>
-          <a href="https://stakekings.com" target="_blank">Stake Kings</a>
+          <a href="https://pro.coinbase.com/" target="_blank">Coinbase Pro</a>
         </li>
         <li>
-          <a href="https://www.actionnetwork.com/" target="_blank"
-            >Action Network</a
-          >
+          <a href="https://www.gemini.com/" target="_blank">Gemini</a>
+        </li>
+        <li>
+          <a href="https://www.shrimpy.io/" target="_blank">Shrimpy</a>
+        </li>
+        <li>
+          <a href="https://www.coingecko.com/en" target="_blank">CoinGecko</a>
         </li>
       </ul>
 
@@ -61,6 +66,9 @@
       <ul>
         <li>Web Development</li>
         <li>
+          <a href="https://stpg.tk" target="_blank">/wg/-/stpg/</a>
+        </li>
+        <li>
           <a href="https://developer.mozilla.org/en-US/" target="_blank"
             >MDN web docs</a
           >
@@ -69,22 +77,44 @@
           <a href="https://w3schools.com" target="_blank">w3schools</a>
         </li>
         <li>
-          <a href="https://stpg.tk" target="_blank">/wg/-/stpg/</a>
+          <a href="https://www.codewars.com/" target="_blank">CodeWars</a>
         </li>
       </ul>
 
-      <ul>
+      <!-- <ul>
         <p id="dark"><i class="fas fa-moon"></i></p>
-      </ul>
-    </nav>
+      </ul> -->
+      <!-- <ul>
+        
+      </ul> -->
+    </section>
 
-    <section>
+    <section class="box-3">
+      <!-- Insert weather data from script.js -->
+    </section>
+
+    <section class="box-4">
       <form action="https://duckduckgo.com/" method="GET" target="_blank">
         <label for="q">>>></label>
         <input name="q" type="search" placeholder="search with duckduckgo..." />
       </form>
     </section>
 
-    <script src="script.js"></script>
+    <svg
+      id="dark"
+      aria-hidden="true"
+      focusable="false"
+      data-prefix="fas"
+      data-icon="moon"
+      class="svg-inline--fa fa-moon"
+      role="img"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+    >
+      <path
+        fill="currentColor"
+        d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"
+      ></path>
+    </svg>
   </body>
 </html>
