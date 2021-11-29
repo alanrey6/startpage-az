@@ -168,3 +168,18 @@ svg {
   width: 23px;
   text-decoration: none;
 }
+
+/* Darkmode Toggle */
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+/* svg#dark {
+  
+} */
+
+svg#dark:hover {
+  cursor: pointer;
+}
