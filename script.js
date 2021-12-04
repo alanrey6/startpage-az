@@ -49,6 +49,10 @@ function updateClock() {
   minutes = minutes < 10 ? `0${minutes}` : minutes;
   let time = `${hours}:${minutes} ${ampm}`;
   document.getElementById('time').innerHTML = time;
+  document.getElementById('date').innerHTML = `${date.toLocaleString(
+    'default',
+    { month: 'short', day: 'numeric', year: 'numeric' }
+  )}`;
   setTimeout(updateClock, 1000);
 }
 
@@ -57,7 +61,7 @@ updateClock();
 //////////////////////////////////////////////////////////////////////////////////
 // OpenWeather API
 
-const weatherContainer = document.querySelector('.box-3');
+const weatherContainer = document.getElementById('box-3');
 const round = num => Math.round(num);
 const day = date =>
   new Date(date).toLocaleString('default', { weekday: 'long' });
@@ -80,7 +84,6 @@ const getWeatherData = async function () {
     if (!res.ok) throw new Error(`${data.message} (${res.status})`);
 
     // console.log(data);
-
     // console.log(new Date(data.current.dt * 1000));
     // console.log('-------------------------------------------');
     // console.log(new Date(data.daily[0].dt * 1000));
@@ -113,7 +116,8 @@ const getWeatherData = async function () {
         <li>Low: ${round(data.daily[1].temp.min * 10) / 10} ॰F</li>
       </ul>
     `;
-    weatherContainer.insertAdjacentHTML('afterbegin', markup);
+    weatherContainer.innerHTML = markup;
+    setTimeout(getWeatherData, 7200000);
   } catch (err) {
     console.log(`${err} 👎`);
   }
@@ -126,9 +130,9 @@ getWeatherData();
 
 const weatherIcon = function (main, time, sunset) {
   const curTime = new Date(time * 1000).getHours();
-  console.log(curTime);
+  // console.log(curTime);
   const dark = new Date(sunset * 1000).getHours();
-  console.log(dark);
+  // console.log(dark);
 
   if (main === 'Thunderstorm') {
     return `<svg

@@ -44,6 +44,7 @@ body {
 section.box-1,
 section.box-4 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 1rem 1rem;
   background: var(--secondary-color);
@@ -52,7 +53,13 @@ section.box-4 {
   border-radius: 10px;
   margin-bottom: 0.5rem;
 }
-section.box-2 {
+
+section#box-4 {
+  flex-direction: row;
+}
+
+section.box-2,
+section.box-3 {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -65,17 +72,8 @@ section.box-2 {
   margin-bottom: 0.5rem;
 }
 
-section.box-3 {
-  display: grid;
-  grid-gap: 1rem;
+section#box-3 {
   grid-template-columns: 1fr 1fr;
-  min-width: 24rem;
-  padding: 1rem 1rem;
-  background: var(--secondary-color);
-  transition: background-color 0.2s;
-  border: none;
-  border-radius: 10px;
-  margin-bottom: 0.5rem;
 }
 
 /* Text Elements */
@@ -143,6 +141,10 @@ form input:focus {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+#date {
+  text-align: center;
 }
 
 #time {
