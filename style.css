@@ -165,12 +165,6 @@ form input:focus {
   font-weight: bold;
 }
 
-svg {
-  height: 23px;
-  width: 23px;
-  text-decoration: none;
-}
-
 /* Darkmode Toggle */
 .toggle {
   display: flex;
@@ -178,9 +172,12 @@ svg {
   justify-content: center;
   padding-bottom: 5px;
 }
-/* svg#dark {
-  
-} */
+
+svg {
+  height: 23px;
+  width: 23px;
+  text-decoration: none;
+}
 
 svg#dark:hover {
   cursor: pointer;
