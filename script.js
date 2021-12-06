@@ -69,9 +69,9 @@ const day = date =>
 //////////////////////////////////////////////////////////////////////////////////
 
 const getWeatherData = async function () {
-  const APIKEY = '81e36cb3e1dbddc54921d3a552b1c1a4';
-  const lat = '39.290386';
-  const lon = '-76.612190';
+  const APIKEY = '';
+  const lat = '';
+  const lon = '';
 
   try {
     // 1) Load Weather Data
