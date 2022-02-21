@@ -21,4 +21,4 @@ If you wish to use this start page for yourself, you will need 2 things:
 
 Once obtained, enter the appropriate items into lines 72, 73, and 74 of script.js
 
-![API and latlon screenshot](./api-latlon-screenshot.png)
+![API and latlon screenshot](./api-latlon-screenshot-2.png)
