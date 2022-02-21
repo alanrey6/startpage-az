@@ -19,6 +19,6 @@ If you wish to use this start page for yourself, you will need 2 things:
 - Your own API key from [openweathermap.org](https://openweathermap.org/appid), and..
 - Your lattitude and longitude coordinates. This can be found using [LatLong.net](https://www.latlong.net/)
 
-Once obtained, enter the appropriate items into lines 68, 69, and 70 of script.js
+Once obtained, enter the appropriate items into lines 72, 73, and 74 of script.js
 
 ![API and latlon screenshot](./api-latlon-screenshot.png)
