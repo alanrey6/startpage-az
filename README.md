@@ -16,8 +16,8 @@ This is a simple start page I started using a lesson/guide from [stpg.tk](https:
 
 If you wish to use this start page for yourself, you will need 2 things:
 
-- Your own API key from [openweathermap.org](https://openweathermap.org/appid), and..
-- Your lattitude and longitude coordinates. This can be found using [LatLong.net](https://www.latlong.net/)
+- Your own API key from [openweathermap.org](https://openweathermap.org/appid), and.
+- Your latitude and longitude coordinates. This can be found using [LatLong.net](https://www.latlong.net/)
 
 Once obtained, enter the appropriate items into lines 72, 73, and 74 of script.js
 
