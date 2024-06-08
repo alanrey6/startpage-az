@@ -61,7 +61,7 @@ section#box-4 {
 section.box-2,
 section.box-3 {
   display: grid;
-  grid-gap: 1rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   min-width: 24rem;
   padding: 1rem 1rem;
@@ -148,6 +148,7 @@ form input:focus {
 }
 
 #time {
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -177,6 +178,7 @@ svg {
   height: 23px;
   width: 23px;
   text-decoration: none;
+  fill: currentColor;
 }
 
 svg#dark:hover {
